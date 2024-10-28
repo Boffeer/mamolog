@@ -1,0 +1,42 @@
+.tabs-nav {
+    z-index: 100;
+    position: relative;
+
+    &__header {
+        display: none;
+    }
+
+    &__content {
+        display: flex;
+    }
+
+    &__item {
+        opacity: 0.5;
+        height: 7.2rem;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 2rem;
+        cursor: pointer;
+        position: relative;
+        color: var(--fg-title);
+        border-bottom: 2px solid transparent;
+        flex-grow: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: var(--transition-time);
+
+        &:hover {
+            opacity: 1;
+            color: var(--c-primary-dark);
+            transition: var(--transition-time);
+        }
+
+        &.active {
+            opacity: 1;
+            color: var(--c-primary);
+            border-bottom-color: var(--c-primary);
+            transition: var(--transition-time);
+        }
+    }
+}

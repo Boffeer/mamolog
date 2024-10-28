@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+	<title>Car rent</title>
+	<meta property="og:title" content="Car rent">
+
+
+<meta name="format-detection" content="telephone=no">
+
+<link rel="icon" type="image/png" href="./img/common/favicon.png">
+
+
+    <meta property="og:description" content="">
+
+              
+
+  <meta property="og:image" content="./img/common/og.png">
+
+
+<meta property="twitter:card" content="summary_large_image">
+
+
+
+    
+
+
+	<meta property="og:type" content="website">
+
+
+
+
+
+  <meta name="msapplication-TileColor" content="#1A1A1A">
+  <meta name="theme-color" content="#1A1A1A">
+
+
+
+    <link rel="stylesheet" href="./css/style.css?_v=20241028192904">
+</head>
+
+<body class="page-home">
+
+<div class="wrapper">
+    <header class="header">
+  <div class="container header__container">
+    <a href="#" class="header__logo logo">
+      <!-- <img src="./img/common/logo-header.svg" alt="" class="logo__img"> -->
+      carrent
+    </a>
+
+    <div class="header__menu menu">
+      <nav class="menu__nav">
+        <ul class="menu__nav-links">
+          <li class="menu__nav-item active">
+            <a href="#" class="menu__nav-link">Главная</a>
+          </li>
+          <li class="menu__nav-item menu__nav-item--has-children">
+            <a href="#cars" class="menu__nav-link">Автопарк</a>
+            <div class="menu__nav-dropdown">
+              <div class="menu__nav-dropdown-content">
+                <a href="#" class="menu__nav-link menu__nav-dropdown-link">Купе</a>
+                <a href="#" class="menu__nav-link menu__nav-dropdown-link">Сенданы</a>
+                <a href="#" class="menu__nav-link menu__nav-dropdown-link">Маслкары</a>
+              </div>
+            </div>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#reviews" class="menu__nav-link">Отзывы</a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#blog" class="menu__nav-link">Блог</a>
+          </li>
+          <li class="menu__nav-item">
+            <a href="#faq" class="menu__nav-link">Вопрос-ответ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header__contacts">
+    	<a href="#" class="header__contacts-phone">
+  			<svg class="header__contacts-icon">
+  				<use xlink:href="./img/common.crrt/icon-phone.svg#icon-phone" />
+  			</svg>
+        <span class="header__contacts-content">
+          <span class="header__contacts-label">Общие вопросы:</span>
+          <span class="header__contacts-text">+7 (922) 506 33 22</span>
+        </span>
+    	</a>
+
+    	<div class="socials header__socials">
+  
+    <a class="socials__link socials__link--facebook" aria-label="FB"
+      href="https://fb.com" target="_blank" rel="noopener noreferrer"
+      >
+      <svg class="socials__icon">
+        <use href="./img/common.crrt/icon-facebook.svg#icon-facebook"></use>
+      </svg>
+    </a>
+  
+    <a class="socials__link socials__link--instagram" aria-label="IG"
+      href="https://instagram.com" target="_blank" rel="noopener noreferrer"
+      >
+      <svg class="socials__icon">
+        <use href="./img/common.crrt/icon-instagram.svg#icon-instagram"></use>
+      </svg>
+    </a>
+  
+    <a class="socials__link socials__link--whatsapp" aria-label="WA"
+      href="https://wa.me" target="_blank" rel="noopener noreferrer"
+      >
+      <svg class="socials__icon">
+        <use href="./img/common.crrt/icon-whatsapp.svg#icon-whatsapp"></use>
+      </svg>
+    </a>
+  
+</div>
+
+    </div>
+
+    <button class="burger header__burger" id="burger">
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+      <span class="burger__line"></span>
+    </button>
+  </div>
+</header>
+
+
+    <main class="main">
+        <div class="container">
+
+            <div class="section">
+                <div class="container"></div>
+            </div>
+
+            <div class="section">
+                <div class="container"></div>
+            </div>
+
+            <div class="section">
+                <div class="container">
+                    <h2 class="section__header text-center">
+                        Выберите<br>
+                        формат консультации
+                    </h2>
+                    <div class="consultation">
+                        <div class="consultation__header">
+                            <div class="tabs-nav">
+                                <div class="tabs-nav__header">
+                                    <div class="tabs-nav__active">Онлайн</div>
+                                    <div class="tabs-nav__arrow">
+                                        <svg class="img-fluid" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#caret-down" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="tabs-nav__content">
+                                    <div class="tabs-nav__item active" data-tabs-nav="tab1">Онлайн</div>
+                                    <div class="tabs-nav__item" data-tabs-nav="tab2">Осмотр</div>
+                                    <div class="tabs-nav__item" data-tabs-nav="tab3">Второе мнение</div>
+                                </div>
+                            </div>
+                        </div><!-- .consultation__header -->
+                        <div class="consultation__body">
+                            <div class="consultation__row">
+                                <div class="consultation__main">
+                                    <div class="consultation__intro">
+                                        <ul class="custom-list">
+                                            <li>Чувствуете дискомфорт в груди, но не знаете, стоит ли беспокоиться?</li>
+                                            <li>Обнаружили уплотнение, и мысли о возможных диагнозах не дают покоя?</li>
+                                            <li>Маммография или УЗИ показали изменения, а что делать дальше — неясно?</li>
+                                            <li>Беспокоят выделения из сосков, но не можете понять, в чём причина?</li>
+                                            <li>Переживаете о здоровье груди в преддверии менопаузы?</li>
+                                        </ul>
+                                    </div>
+                                    <div class="consultation__title">Я готов стать вашим личным маммологом!</div>
+                                    <ul class="consultation__roadmap">
+                                        <li>На консультации сможете поделиться жалобами / подозрениями / переживаниями. Поднимем вашу историю болезни.</li>
+                                        <li>Разберемся, есть ли существенные причины обратиться за полноценным осмотром.</li>
+                                        <li>Уйдете со списком персонализированных рекомендаций, как обеспечить поддержку здоровью и красоте молочных желез.</li>
+                                    </ul>
+                                </div>
+                                <div class="consultation__media">
+                                    <div class="consultation__block">
+                                        <div class="consultation__image">
+                                            <img src="img/d_consultation/block_photo.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="consultation__form">
+                                            <div class="mb-10">
+                                                <label class="field">
+                                                    <input type="text" name="name" placeholder="Ваше имя">
+                                                </label>
+                                            </div>
+                                            <div class="mb-10">
+                                                <label class="field">
+                                                    <input type="text" name="phone" placeholder="Номер телефона">
+                                                </label>
+                                            </div>
+                                            <div class="mb-10">
+                                                <label class="field">
+                                                    <input type="text" name="email" placeholder="Почта">
+                                                </label>
+                                            </div>
+                                            <div class="mb-20">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="check" class="checkbox__input">
+                                                    <span class="checkbox__label">Даю согласие на обработку персональных данных</span>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn-primary">
+                                                <span>Зарегистрироваться</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="consultation__info">
+                                        <div class="consultation__tag">
+                                            <div class="consultation__icon">
+                                                <svg class="img-fluid" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="img/common.d/sprites/sprite.svg#money" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="consultation__value">от 3 <strong>990₽</strong></div>
+                                        </div>
+                                        <div class="consultation__tag">
+                                            <div class="consultation__icon">
+                                                <svg class="img-fluid" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="img/common.d/sprites/sprite.svg#calendar" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="consultation__value"><strong>45 минут</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!-- .consultation__body -->
+                    </div><!-- .consultation -->
+                </div>
+            </div><!-- .section -->
+
+            <div class="section">
+                <div class="post-block">
+                    <div class="post-block__avatar">
+                        <img src="img/d_post/doctor_logo.jpg" class="img-cover" alt="">
+                    </div>
+                    <div class="post-block__header">Доктор Иван Мурашов в Telegram!</div>
+                    <div class="post-block__grid">
+                        <div class="post">
+                            <a href="#" class="post__media">
+                                <img src="img/d_post/item_media_01.jpg" class="img-cover" alt="">
+                            </a>
+                            <div class="post__title">
+                                Рад приветствовать вас на своем канале и хотел бы познакомиться поближе 😉
+                            </div>
+                            <div class="post__footer">
+                                <a href="#" class="post__link">Читать полностью</a>
+                            </div>
+                        </div>
+                        <div class="post">
+                            <a href="#" class="post__media">
+                                <img src="img/d_post/item_media_02.jpg" class="img-cover" alt="">
+                            </a>
+                            <div class="post__title">
+                                Профилактика рака молочной железы
+                            </div>
+                            <div class="post__footer">
+                                <a href="#" class="post__link">Читать полностью</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <a href="#" class="btn-outline-primary" target="_blank">
+                            <span>Подписаться</span>
+                        </a>
+                    </div>
+                </div>
+            </div><!-- .section -->
+
+            <div class="section">
+                <div class="price-list">
+                    <div class="price-list__header">Стоимости</div>
+                    <div class="price-list__main">
+                        <div class="price-list__item">
+                            <div class="price-list__title">
+                                Core-биопсия молочной железы под контролем УЗИ со взятием материала (без стоимости гистологического исследования)
+                            </div>
+                            <div class="price-list__content">
+                                <div class="price-list__value">от 9750₽</div>
+                                <a href="#" class="price-list__button">
+                                    <i>
+                                        <svg class="img-fluid" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#long-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__title">
+                                Тонкоигольная биопсия под УЗИ контролем со взятием материала (без стоимости гистологического исследования)
+                            </div>
+                            <div class="price-list__content">
+                                <div class="price-list__value">от 5500₽</div>
+                                <a href="#" class="price-list__button">
+                                    <i>
+                                        <svg class="img-fluid" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#long-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__title">
+                                Санация кист молочной железы под УЗИ контролем до 3 шт.
+                            </div>
+                            <div class="price-list__content">
+                                <div class="price-list__value">от 3500₽</div>
+                                <a href="#" class="price-list__button">
+                                    <i>
+                                        <svg class="img-fluid" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#long-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__title">
+                                Пребывание в палате стационара (дневное до 21:00)
+                            </div>
+                            <div class="price-list__content">
+                                <div class="price-list__value">от 3300₽</div>
+                                <a href="#" class="price-list__button">
+                                    <i>
+                                        <svg class="img-fluid" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#long-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__title">
+                                Пребывание в палате сопровождающих лиц (суточное)
+                            </div>
+                            <div class="price-list__content">
+                                <div class="price-list__value">от 4400₽</div>
+                                <a href="#" class="price-list__button">
+                                    <i>
+                                        <svg class="img-fluid" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#long-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__title">
+                                Вакуумная аспирационная биопсия молочной железы 1 кат. сложности до 1 см, под контролем УЗИ — 1 образование (без стоимости гистологического исследования, анестезии и роботизированного зонда)
+                            </div>
+                            <div class="price-list__content">
+                                <div class="price-list__value">от 49500₽</div>
+                                <a href="#" class="price-list__button">
+                                    <i>
+                                        <svg class="img-fluid" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#long-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__title">
+                                Удаление одного дополнительного образования 1 кат. сложности до 1 см при вакуумной аспирационной биопсии молочной железы под контролем УЗИ (без стоимости гистологического исследования и анестезии)
+                            </div>
+                            <div class="price-list__content">
+                                <div class="price-list__value">от 49500₽</div>
+                                <a href="#" class="price-list__button">
+                                    <i>
+                                        <svg class="img-fluid" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#long-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__title">Прием главного специалиста, врача-эксперта</div>
+                            <div class="price-list__content">
+                                <div class="price-list__value">от 4900₽</div>
+                                <a href="#" class="price-list__button">
+                                    <i>
+                                        <svg class="img-fluid" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#long-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="price-list__item">
+                            <div class="price-list__title">Ультразвуковое исследование молочных желез</div>
+                            <div class="price-list__content">
+                                <div class="price-list__value">от 3250₽</div>
+                                <a href="#" class="price-list__button">
+                                    <i>
+                                        <svg class="img-fluid" viewBox="0 0 16 8" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#long-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </a>
+                            </div>
+                        </div>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div><!-- .section -->
+
+            <div class="section">
+                <h2 class="section__header section__header--news text-center">Последние новости</h2>
+                <div class="news-grid">
+                    <div class="news-item">
+                        <a href="#" class="news-item__media">
+                            <img src="img/d_news/news_item_image.jpg" class="img-cover" alt="">
+                        </a>
+                        <div class="news-item__date">1 января 2021</div>
+                        <div class="news-item__title">
+                            <a href="#">Заголовок новости</a>
+                        </div>
+                        <div class="news-item__text">
+                            Описание новости в 2-3 строки для продажи идеи прочтения и погружения в контекст
+                        </div>
+                        <div class="news-item__footer">
+                            <a href="#" class="news-item__link">
+                                <span>Подробнее</span>
+                                <i>
+                                    <svg class="ico-svg" viewBox="0 0 7 11" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/common.d/sprites/sprite.svg#link-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                    </div><!-- .news-item -->
+                    <div class="news-item">
+                        <a href="#" class="news-item__media">
+                            <img src="img/d_news/news_item_image.jpg" class="img-cover" alt="">
+                        </a>
+                        <div class="news-item__date">1 января 2021</div>
+                        <div class="news-item__title">
+                            <a href="#">Заголовок новости</a>
+                        </div>
+                        <div class="news-item__text">
+                            Описание новости в 2-3 строки для продажи идеи прочтения и погружения в контекст
+                        </div>
+                        <div class="news-item__footer">
+                            <a href="#" class="news-item__link">
+                                <span>Подробнее</span>
+                                <i>
+                                    <svg class="ico-svg" viewBox="0 0 7 11" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/common.d/sprites/sprite.svg#link-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                    </div><!-- .news-item -->
+                    <div class="news-item">
+                        <a href="#" class="news-item__media">
+                            <img src="img/d_news/news_item_image.jpg" class="img-cover" alt="">
+                        </a>
+                        <div class="news-item__date">1 января 2021</div>
+                        <div class="news-item__title">
+                            <a href="#">Заголовок новости</a>
+                        </div>
+                        <div class="news-item__text">
+                            Описание новости в 2-3 строки для продажи идеи прочтения и погружения в контекст
+                        </div>
+                        <div class="news-item__footer">
+                            <a href="#" class="news-item__link">
+                                <span>Подробнее</span>
+                                <i>
+                                    <svg class="ico-svg" viewBox="0 0 7 11" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/common.d/sprites/sprite.svg#link-arrow-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
+                                </i>
+                            </a>
+                        </div>
+                    </div><!-- .news-item -->
+                </div>
+                <div class="text-center">
+                    <button type="button" class="btn-outline-secondary news-btn-read">
+                        <span>читать все новости</span>
+                    </button>
+                </div>
+            </div><!-- .section -->
+
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__main">
+                <div class="footer__primary">
+                    <a href="/" class="footer__logo">
+                        <img src="img/common.d/footer__logo.png" class="img-fluid" alt="">
+                    </a>
+                    <div class="footer__offices">
+                        <div class="footer__address">
+                            <i>
+                                <svg class="img-fluid" viewBox="0 0 13 20" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/common.d/sprites/sprite.svg#icon-pin" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                            <span>г. Москва, ул. Сергия Радонежского, д.5/2, стр.1</span>
+                        </div>
+                        <div class="footer__address">
+                            <i>
+                                <svg class="img-fluid" viewBox="0 0 13 20" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/common.d/sprites/sprite.svg#icon-pin" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                            <span>г. Москва, ул. Сергия Радонежского, д.5/2, стр.1</span>
+                        </div>
+                    </div>
+                    <div class="footer__contacts">
+                        <a href="mailto:example@mail.ru" class="footer__contact">
+                            <i>
+                                <svg class="img-fluid" viewBox="0 0 17 13" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/common.d/sprites/sprite.svg#icon-email" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                            <span>example@mail.ru</span>
+                        </a>
+                        <a href="tel:+7 999 153 8341" class="footer__contact">
+                            <i>
+                                <svg class="img-fluid" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                                    <use xlink:href="img/common.d/sprites/sprite.svg#icon-phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                </svg>
+                            </i>
+                            <span>+7 999 153 8341</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer__secondary">
+                    <div class="footer__buttons">
+                        <a href="#" class="footer__button" target="_blank">
+                            <span>Telegram</span>
+                        </a>
+                        <a href="#" class="footer__button" target="_blank">
+                            <span>WhatsApp</span>
+                        </a>
+                    </div>
+                    <div class="footer__elem">
+                        <div class="footer__dev">
+                            Создатель сайта - <a href="#" target="_blank">Асташко Никита</a>
+                        </div>
+                    </div>
+                    <div class="footer__text">
+                        <a href="#" class="footer__policy">Политика конфиденциальности</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</div>
+
+
+
+<script src="./js/index.min.js?_v=20241028192904"></script>
+</body>
+</html>

@@ -1,0 +1,111 @@
+.post-block {
+    border-radius: 3rem;
+    padding: 3.6rem 4rem 7.6rem 4rem;
+    background-color: white;
+
+    &__avatar {
+        width: 10rem;
+        height: 10rem;
+        display: block;
+        overflow: hidden;
+        margin: 0 auto 2.3rem auto;
+    }
+
+    &__header {
+        text-align: center;
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 5rem;
+    }
+
+    &__grid {
+        width: 78rem;
+        margin: 0 auto 3.5rem auto;
+        display: grid;
+        grid-column-gap: 2.8rem;
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.post {
+    font-size: 1.5rem;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+
+    &__media {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        border-radius: 2rem;
+        margin-bottom: 2.7rem;
+
+        &:before {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 5;
+            content: '';
+            position: absolute;
+            background-color: rgba(99, 158, 184, 0);
+            transition: var(--transition-time);
+        }
+
+        &:hover {
+
+            &:before {
+                background-color: rgba(99, 158, 184, 0.3);
+                transition: var(--transition-time);
+            }
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 1.8rem;
+        line-height: 2.5rem;
+        margin-bottom: 1.1rem;
+        flex-grow: 1;
+
+        a {
+            color: var(--fg-regular);
+            text-decoration: none;
+            transition: var(--transition-time);
+
+            &:hover {
+                color: var(--c-primary-dark);
+                text-decoration: none;
+                transition: var(--transition-time);
+            }
+        }
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+    }
+
+    &__link {
+        font-weight: 700;
+        font-size: 1.6rem;
+        line-height: 2.2rem;
+        cursor: pointer;
+        white-space: nowrap;
+        color: var(--c-primary);
+        text-decoration: none;
+        transition: var(--transition-time);
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid var(--c-primary);
+
+
+        &:hover {
+            color: var(--c-primary-dark);
+            border-bottom-color: transparent;
+            text-decoration: none;
+            transition: var(--transition-time);
+        }
+    }
+}

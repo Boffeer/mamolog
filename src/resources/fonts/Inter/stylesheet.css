@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Bold Italic'), local('Inter-BoldItalic'),
+        url('Inter-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Medium Italic'), local('Inter-MediumItalic'),
+        url('Inter-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Regular'), local('Inter-Regular'),
+        url('Inter-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Black'), local('Inter-Black'),
+        url('Inter-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Black Italic'), local('Inter-BlackItalic'),
+        url('Inter-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Semi Bold'), local('Inter-SemiBold'),
+        url('Inter-SemiBold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Extra Bold Italic'), local('Inter-ExtraBoldItalic'),
+        url('Inter-ExtraBoldItalic.woff2') format('woff2');
+    font-weight: 800;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Bold'), local('Inter-Bold'),
+        url('Inter-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Extra Bold'), local('Inter-ExtraBold'),
+        url('Inter-ExtraBold.woff2') format('woff2');
+    font-weight: 800;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Italic'), local('Inter-Italic'),
+        url('Inter-Italic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Semi Bold Italic'), local('Inter-SemiBoldItalic'),
+        url('Inter-SemiBoldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: local('Inter Medium'), local('Inter-Medium'),
+        url('Inter-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+}
+
