@@ -40,7 +40,7 @@
 
 
 
-    <link rel="stylesheet" href="./css/style.css?_v=20241028192904">
+    <link rel="stylesheet" href="./css/style.css?_v=20241029024547">
 </head>
 
 <body class="page-home">
@@ -136,42 +136,101 @@
         <div class="container">
 
             <div class="section">
-                <div class="container"></div>
+
             </div>
 
             <div class="section">
-                <div class="container"></div>
-            </div>
-
-            <div class="section">
-                <div class="container">
-                    <h2 class="section__header text-center">
-                        Выберите<br>
-                        формат консультации
-                    </h2>
-                    <div class="consultation">
-                        <div class="consultation__header">
-                            <div class="tabs-nav">
-                                <div class="tabs-nav__header">
-                                    <div class="tabs-nav__active">Онлайн</div>
-                                    <div class="tabs-nav__arrow">
-                                        <svg class="img-fluid" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
-                                            <use xlink:href="img/common.d/sprites/sprite.svg#caret-down" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                <div class="about">
+                    <div class="about-docs">
+                        <div class="about-docs__content">
+                            <div class="about-docs__title"></div>
+                            <div class="about-docs__text"></div>
+                            <div class="about-docs__nav about-docs__nav--xl">
+                                <button type="button" class="btn-control">
+                                    <i>
+                                        <svg class="img-fluid" viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#angle-left" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
                                         </svg>
+                                    </i>
+                                </button>
+                                <button type="button" class="btn-control">
+                                    <i>
+                                        <svg class="img-fluid" viewBox="0 0 6 12" xmlns="http://www.w3.org/2000/svg">
+                                            <use xlink:href="img/common.d/sprites/sprite.svg#angle-right" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                        </svg>
+                                    </i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="about-docs__media">
+                            <div class="swiper" data-docs>
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a href="img/d_about/doc__01.jpg" class="about-docs__image" data-fancybox="doxs">
+                                            <img src="img/d_about/doc__01.jpg" class="img-cover" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="img/d_about/doc__02.jpg" class="about-docs__image" data-fancybox="doxs">
+                                            <img src="img/d_about/doc__02.jpg" class="img-cover" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="img/d_about/doc__01.jpg" class="about-docs__image" data-fancybox="doxs">
+                                            <img src="img/d_about/doc__01.jpg" class="img-cover" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="img/d_about/doc__02.jpg" class="about-docs__image" data-fancybox="doxs">
+                                            <img src="img/d_about/doc__02.jpg" class="img-cover" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="img/d_about/doc__01.jpg" class="about-docs__image" data-fancybox="doxs">
+                                            <img src="img/d_about/doc__01.jpg" class="img-cover" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a href="img/d_about/doc__02.jpg" class="about-docs__image" data-fancybox="doxs">
+                                            <img src="img/d_about/doc__02.jpg" class="img-cover" alt="">
+                                        </a>
                                     </div>
                                 </div>
-                                <div class="tabs-nav__content">
-                                    <div class="tabs-nav__item active" data-tabs-nav="tab1">Онлайн</div>
-                                    <div class="tabs-nav__item" data-tabs-nav="tab2">Осмотр</div>
-                                    <div class="tabs-nav__item" data-tabs-nav="tab3">Второе мнение</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section">
+                <h2 class="section__header text-center">
+                    Выберите<br>
+                    формат консультации
+                </h2>
+                <div class="consultation" data-tabs>
+                    <div class="consultation__header">
+                        <div class="tabs-nav">
+                            <div class="tabs-nav__header">
+                                <div class="tabs-nav__active">Онлайн</div>
+                                <div class="tabs-nav__arrow">
+                                    <svg class="img-fluid" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
+                                        <use xlink:href="img/common.d/sprites/sprite.svg#caret-down" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                    </svg>
                                 </div>
                             </div>
-                        </div><!-- .consultation__header -->
-                        <div class="consultation__body">
+                            <div class="tabs-nav__content">
+                                <div class="tabs-nav__item active" data-tabs-nav="tab1">Онлайн</div>
+                                <div class="tabs-nav__item" data-tabs-nav="tab2">Осмотр</div>
+                                <div class="tabs-nav__item" data-tabs-nav="tab3">Второе мнение</div>
+                            </div>
+                        </div>
+                    </div><!-- .consultation__header -->
+                    <div class="consultation__body">
+                        <div class="tabs-content active" data-tabs-target="tab1">
                             <div class="consultation__row">
                                 <div class="consultation__main">
                                     <div class="consultation__intro">
-                                        <ul class="custom-list">
+                                        <ul class="list-point">
                                             <li>Чувствуете дискомфорт в груди, но не знаете, стоит ли беспокоиться?</li>
                                             <li>Обнаружили уплотнение, и мысли о возможных диагнозах не дают покоя?</li>
                                             <li>Маммография или УЗИ показали изменения, а что делать дальше — неясно?</li>
@@ -180,11 +239,17 @@
                                         </ul>
                                     </div>
                                     <div class="consultation__title">Я готов стать вашим личным маммологом!</div>
-                                    <ul class="consultation__roadmap">
+                                    <ol class="consultation__roadmap">
                                         <li>На консультации сможете поделиться жалобами / подозрениями / переживаниями. Поднимем вашу историю болезни.</li>
                                         <li>Разберемся, есть ли существенные причины обратиться за полноценным осмотром.</li>
                                         <li>Уйдете со списком персонализированных рекомендаций, как обеспечить поддержку здоровью и красоте молочных желез.</li>
-                                    </ul>
+                                    </ol>
+                                    <div class="consultation__lead">
+                                        + Возможно согласовать проведение ВАБ или санации кист озоном
+                                    </div>
+                                    <div class="consultation__text">
+                                        Важно! Придерживаюсь принципов доказательной медицины. Не консультирую по нетрадиционным и альтернативным методам диагностики и лечения.
+                                    </div>
                                 </div>
                                 <div class="consultation__media">
                                     <div class="consultation__block">
@@ -193,27 +258,42 @@
                                         </div>
                                         <div class="consultation__form">
                                             <div class="mb-10">
-                                                <label class="field">
+                                                <label class="field field--icon">
                                                     <input type="text" name="name" placeholder="Ваше имя">
+                                                    <i class="field__icon">
+                                                        <svg class="img-fluid" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                            <use xlink:href="img/common.d/sprites/sprite.svg#field-user" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                        </svg>
+                                                    </i>
                                                 </label>
                                             </div>
                                             <div class="mb-10">
-                                                <label class="field">
+                                                <label class="field field--icon">
                                                     <input type="text" name="phone" placeholder="Номер телефона">
+                                                    <i class="field__icon">
+                                                        <svg class="img-fluid" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                            <use xlink:href="img/common.d/sprites/sprite.svg#field-phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                        </svg>
+                                                    </i>
                                                 </label>
                                             </div>
                                             <div class="mb-10">
-                                                <label class="field">
+                                                <label class="field field--icon">
                                                     <input type="text" name="email" placeholder="Почта">
+                                                    <i class="field__icon">
+                                                        <svg class="img-fluid" viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg">
+                                                            <use xlink:href="img/common.d/sprites/sprite.svg#field-email" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                        </svg>
+                                                    </i>
                                                 </label>
                                             </div>
                                             <div class="mb-20">
                                                 <label class="checkbox">
-                                                    <input type="checkbox" name="check" class="checkbox__input">
+                                                    <input type="checkbox" name="check" class="checkbox__input" checked>
                                                     <span class="checkbox__label">Даю согласие на обработку персональных данных</span>
                                                 </label>
                                             </div>
-                                            <button type="button" class="btn-primary">
+                                            <button type="button" class="btn-primary w-100">
                                                 <span>Зарегистрироваться</span>
                                             </button>
                                         </div>
@@ -225,8 +305,9 @@
                                                     <use xlink:href="img/common.d/sprites/sprite.svg#money" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
                                                 </svg>
                                             </div>
-                                            <div class="consultation__value">от 3 <strong>990₽</strong></div>
+                                            <div class="consultation__value">от <strong>3 990₽</strong></div>
                                         </div>
+                                        <div class="consultation__divider"></div>
                                         <div class="consultation__tag">
                                             <div class="consultation__icon">
                                                 <svg class="img-fluid" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
@@ -238,9 +319,161 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><!-- .consultation__body -->
-                    </div><!-- .consultation -->
-                </div>
+                        </div>
+                        <div class="tabs-content" data-tabs-target="tab2">
+                            <div class="consultation__row">
+                                <div class="consultation__main">
+                                    <div class="consultation__intro">
+                                        <ul class="list-point">
+                                            <li>Чувствуете дискомфорт в груди, но не знаете, стоит ли беспокоиться?</li>
+                                            <li>Обнаружили уплотнение, и мысли о возможных диагнозах не дают покоя?</li>
+                                            <li>Маммография или УЗИ показали изменения, а что делать дальше — неясно?</li>
+                                            <li>Беспокоят выделения из сосков, но не можете понять, в чём причина?</li>
+                                            <li>Переживаете о здоровье груди в преддверии менопаузы?</li>
+                                        </ul>
+                                    </div>
+                                    <div class="consultation__title">
+                                        Профилактический осмотр и рекомендации / лечение
+                                    </div>
+                                    <ol class="consultation__roadmap">
+                                        <li>Вы расскажете о своих жалобах, я проведу пальпацию молочных желез и дам предварительное заключение.</li>
+                                        <li>С помощью УЗИ выявим скрытые патологии и новообразования, что позволяет избежать серьезных вмешательств.</li>
+                                        <li>Если обнаружены узлы, будет проведена биопсия для уточнения диагноза, без разрезов и долгой реабилитации.</li>
+                                        <li>Вы получите персонализированные рекомендации по поддержанию здоровья и плану лечения.</li>
+                                        <li>Повторный визит. Обсудим результаты и выберем дальнейшую тактику лечения.</li>
+                                    </ol>
+                                </div>
+                                <div class="consultation__media">
+                                    <div class="consultation__block">
+                                        <div class="consultation__image">
+                                            <img src="img/d_consultation/block_photo.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="mb-25">
+                                            <button type="button" class="btn-primary w-100">
+                                                <span>Записться: Москва</span>
+                                            </button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn-primary w-100">
+                                                <span>Записться: Ростов</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="consultation__info">
+                                        <div class="consultation__tag">
+                                            <div class="consultation__icon">
+                                                <svg class="img-fluid" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="img/common.d/sprites/sprite.svg#money" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="consultation__value">от <strong>4 990₽</strong></div>
+                                        </div>
+                                        <div class="consultation__divider"></div>
+                                        <div class="consultation__tag">
+                                            <div class="consultation__icon">
+                                                <svg class="img-fluid" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="img/common.d/sprites/sprite.svg#calendar" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="consultation__value"><strong>45 минут</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tabs-content " data-tabs-target="tab3">
+                            <div class="consultation__row">
+                                <div class="consultation__main">
+                                    <div class="consultation__text mb-25">
+                                        <p>У вас есть заключение от другого специалиста о том, что вам рекомендовано удаление доброкачественного новообразования молочной железы?</p>
+                                        <p> Или же вам посоветовали его еще «понаблюдать»?</p>
+                                    </div>
+                                    <div class="consultation__title mb-25">Второе мнение <br>от трехкратного победителя ГРАНПРИ ПроДокторов в области маммологии</div>
+                                    <div class="consultation__text consultation__text--md mb-30">
+                                        <p>Запишитесь на консультацию, чтобы получить независимую оценку вашего состояния.</p>
+                                        <p>Вместе разберем ваши результаты, рассмотрим возможные альтернативы и выберем оптимальную тактику лечения.</p>
+                                        <p>Будьте уверены в каждом решении, которое затрагивает здоровье</p>
+                                    </div>
+                                    <div class="consultation__lead consultation__lead--md">
+                                        <h4 class="mb-20">Акция: второе мнение бесплатно</h4>
+                                        Акция распространяется только на те случаи, когда установлен диагноз и стоит вопрос об операции или наблюдении.
+                                    </div>
+                                    <div class="consultation__text mb-0">
+                                        Оставьте заявку, чтобы обсудить место<br>
+                                        и время проведения осмотра (МСК, РНД)
+                                    </div>
+                                </div>
+                                <div class="consultation__media">
+                                    <div class="consultation__block">
+                                        <div class="consultation__image">
+                                            <img src="img/d_consultation/block_photo.jpg" class="img-fluid" alt="">
+                                        </div>
+                                        <div class="consultation__form">
+                                            <div class="mb-10">
+                                                <label class="field field--icon">
+                                                    <input type="text" name="name" placeholder="Ваше имя">
+                                                    <i class="field__icon">
+                                                        <svg class="img-fluid" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                            <use xlink:href="img/common.d/sprites/sprite.svg#field-user" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                        </svg>
+                                                    </i>
+                                                </label>
+                                            </div>
+                                            <div class="mb-10">
+                                                <label class="field field--icon">
+                                                    <input type="text" name="phone" placeholder="Номер телефона">
+                                                    <i class="field__icon">
+                                                        <svg class="img-fluid" viewBox="0 0 14 14" xmlns="http://www.w3.org/2000/svg">
+                                                            <use xlink:href="img/common.d/sprites/sprite.svg#field-phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                        </svg>
+                                                    </i>
+                                                </label>
+                                            </div>
+                                            <div class="mb-10">
+                                                <label class="field field--icon">
+                                                    <input type="text" name="email" placeholder="Почта">
+                                                    <i class="field__icon">
+                                                        <svg class="img-fluid" viewBox="0 0 14 11" xmlns="http://www.w3.org/2000/svg">
+                                                            <use xlink:href="img/common.d/sprites/sprite.svg#field-email" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                        </svg>
+                                                    </i>
+                                                </label>
+                                            </div>
+                                            <div class="mb-20">
+                                                <label class="checkbox">
+                                                    <input type="checkbox" name="check" class="checkbox__input" checked>
+                                                    <span class="checkbox__label">Даю согласие на обработку персональных данных</span>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn-primary w-100">
+                                                <span>Зарегистрироваться</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="consultation__info">
+                                        <div class="consultation__tag">
+                                            <div class="consultation__icon">
+                                                <svg class="img-fluid" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="img/common.d/sprites/sprite.svg#money" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="consultation__value">от <strong>3 990₽</strong></div>
+                                        </div>
+                                        <div class="consultation__divider"></div>
+                                        <div class="consultation__tag">
+                                            <div class="consultation__icon">
+                                                <svg class="img-fluid" viewBox="0 0 26 26" xmlns="http://www.w3.org/2000/svg">
+                                                    <use xlink:href="img/common.d/sprites/sprite.svg#calendar" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="consultation__value"><strong>45 минут</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- .consultation__body -->
+                </div><!-- .consultation -->
             </div><!-- .section -->
 
             <div class="section">
@@ -576,6 +809,6 @@
 
 
 
-<script src="./js/index.min.js?_v=20241028192904"></script>
+<script src="./js/index.min.js?_v=20241029024547"></script>
 </body>
 </html>

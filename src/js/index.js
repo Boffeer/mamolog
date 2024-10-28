@@ -11,6 +11,8 @@ import "./components.b/controls/_select.js";
 import "./components.b/header/header.js";
 import "./components.b/controls/formich.js";
 
+import "./components.d/tabs.js";
+
 
 window.media = {
 	tablet: 991,

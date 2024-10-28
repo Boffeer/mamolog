@@ -8,3 +8,31 @@ h2 {
     font-size: var(--fz-h2);
     line-height: var(--fz-h2);
 }
+
+h4,
+h4 {
+    font-weight: 700;
+    font-size: var(--fz-h4);
+    line-height: 140%;
+}
+
+
+.list-point {
+    font-size: 1.6rem;
+    line-height: 140%;
+    display: flex;
+    row-gap: 1.35rem;
+    flex-direction: column;
+
+    li {
+        position: relative;
+        padding-left: 2.5rem;
+
+        &:before {
+            top: 0;
+            left: 0.7rem;
+            content: '•';
+            position: absolute;
+        }
+    }
+}

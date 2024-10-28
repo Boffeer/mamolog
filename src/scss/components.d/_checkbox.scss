@@ -1,0 +1,80 @@
+.checkbox {
+    color: #2D3035;
+    font-size: 0;
+    line-height: 0;
+    font-weight: 400;
+    position: relative;
+    display: block;
+
+    &__input {
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        opacity: 0;
+        overflow: hidden;
+        visibility: hidden;
+        position: absolute;
+
+        &:checked + .checkbox__label {
+
+            &:before {
+                border-color: var(--c-primary);
+                background: var(--c-primary);
+            }
+
+            &:after {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        &:disabled + .checkbox__label {
+            opacity: 0.6;
+            cursor: default;
+        }
+    }
+
+    &__label {
+        cursor: pointer;
+        color: var(--gray);
+        min-height: 16px;
+        font-size: 1.3rem;
+        line-height: 1.8rem;
+        position: relative;
+        display: block;
+        padding: 0 0 0 2.5rem;
+
+        &:before {
+            top: .3rem;
+            left: 0;
+            z-index: 1;
+            content: '';
+            width: 1.4rem;
+            height: 1.4rem;
+            position: absolute;
+            border-radius: .2rem;
+            background: transparent;
+            border: 1px solid var(--c-primary)
+        }
+
+        &:after {
+            top: .3rem;
+            left: 0;
+            z-index: 5;
+            content: '';
+            width: 1.4rem;
+            height: 1.4rem;
+            position: absolute;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0nMTQnIHZpZXdCb3g9JzAgMCAxNCAxNCcgZmlsbD0nbm9uZScgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48cGF0aCBkPSdNMTAuODgyNyA0LjE4Mjg0QzEwLjcyNjUgNC4wMjQ5OSAxMC40NzMzIDQuMDI0OTkgMTAuMzE3IDQuMTgyODRMNS41MjQ3OSA5LjAyNTAzTDMuNjgyNzMgNy4xNjM3OUMzLjUyNjUzIDcuMDA1OTUgMy4yNzMyOCA3LjAwNTk2IDMuMTE3MDQgNy4xNjM3OUMyLjk2MDgyIDcuMzIxNjIgMi45NjA4MiA3LjU3NzUxIDMuMTE3MDQgNy43MzUzNUw1LjI0MTk1IDkuODgyMzVDNS4zOTgxIDEwLjA0MDIgNS42NTE1NCAxMC4wNDAxIDUuODA3NjMgOS44ODIzNUwxMC44ODI3IDQuNzU0NDFDMTEuMDM4OSA0LjU5NjU5IDExLjAzODkgNC4zNDA2OCAxMC44ODI3IDQuMTgyODRaJyBmaWxsPSd3aGl0ZScvPjwvc3ZnPg==");
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        &:hover {
+        }
+    }
+}
