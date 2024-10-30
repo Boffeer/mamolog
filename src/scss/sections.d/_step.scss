@@ -4,6 +4,11 @@
     flex-direction: column;
     counter-reset: num;
     margin-bottom: 6.7rem;
+
+    @media (max-width: $tablet) {
+        row-gap: 2rem;
+        margin-bottom: 4rem;
+    }
 }
 
 .step-item {
@@ -77,6 +82,39 @@
             &:not(:last-child) {
                 margin-bottom: 2rem;
             }
+        }
+    }
+
+    @media (max-width: $tablet) {
+        padding: 3rem;
+
+        &:before {
+            top: -1rem;
+            left: auto;
+            right: 1rem;
+            font-size: 20rem;
+        }
+
+        &__top {
+            display: none;
+        }
+
+        &__content {
+            padding-left: 0;
+        }
+
+        &__main {
+            row-gap: 2rem;
+            flex-direction: column;
+        }
+
+        &__media {
+            width: 100%;
+        }
+
+        &__header {
+            font-size: 2.8rem;
+            line-height: 110%;
         }
     }
 }

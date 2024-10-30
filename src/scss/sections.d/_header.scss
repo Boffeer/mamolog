@@ -13,21 +13,56 @@
     }
 
     &__logo {
+        z-index: 3;
         width: 5.4rem;
         height: 5.4rem;
         display: block;
+        position: relative;
+    }
+
+    @media (max-width: $tablet) {
+
+        &:before {
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 1px;
+            content: '';
+            z-index: 20;
+            position: absolute;
+            background-color: var(--c-primary);
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.45s var(--tr-jolly-enter);
+        }
+
+        &--burger-opened {
+
+            &:before {
+                opacity: 1;
+                visibility: visible;
+                transition: all 0.45s var(--tr-jolly-enter);
+            }
+        }
     }
 }
 
-.header-nav {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+.menu {
+    --fg: #68696B;
+    --lh: 145.4%;
+    --fw: 300;
+
     font-size: 1.6rem;
     line-height: 2.4rem;
-    display: flex;
-    column-gap: 4rem;
-    align-items: center;
+
+    &__nav {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        column-gap: 4rem;
+        align-items: center;
+    }
 
     &__link {
         opacity: .5;
@@ -64,4 +99,40 @@
             }
         }
     }
+
+    @media (max-width: $tablet) {
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        padding: 12rem 4rem 3rem;
+        position: fixed;
+        background-color: white;
+        transform: translateY(-100%);
+        transition: all 0.45s var(--tr-jolly-enter);
+
+        &__nav {
+            row-gap: 2rem;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__link {
+            height: auto;
+
+            &.active {
+
+                &:before {
+                    display: none;
+                }
+            }
+        }
+
+        &--visible {
+            transform: translateY(0);
+            pointer-events: initial;
+            transition: all 0.45s var(--tr-jolly-enter);
+        }
+    }
 }
+

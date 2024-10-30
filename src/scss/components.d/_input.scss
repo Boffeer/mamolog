@@ -72,11 +72,34 @@
         }
     }
 
-
     &--icon {
 
         #{$input-selector} {
             padding-left: 4.8rem;
+        }
+    }
+
+    @media (max-width: $tablet) {
+
+        #{$input-selector} {
+            height: 5rem;
+            font-size: 1.2rem;
+            line-height: 2rem;
+            padding: 1.3rem 2rem;
+        }
+
+        &__icon {
+            left: 1.4rem;
+            width: 1.2rem;
+            height: 1.2rem;
+            top: calc(50% - 0.6rem);
+        }
+
+        &--icon {
+
+            #{$input-selector} {
+                padding-left: 3.4rem;
+            }
         }
     }
 }

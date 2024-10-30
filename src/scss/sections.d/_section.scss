@@ -17,4 +17,18 @@
         max-width:  84rem;
         margin: 0 auto;
     }
+
+    @media (max-width: $tablet) {
+        margin-bottom: 6rem;
+
+        &__header {
+            font-size: 3.2rem;
+            line-height: 3.2rem;
+            margin-bottom: 2rem;
+
+            &--news {
+                margin-bottom: 3.5rem;
+            }
+        }
+    }
 }

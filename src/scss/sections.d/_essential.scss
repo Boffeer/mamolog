@@ -42,4 +42,31 @@
             }
         }
     }
+
+    @media (max-width: $tablet) {
+        padding: 0;
+
+        &__content {
+            width: 100%;
+            padding: 2rem 2rem;
+        }
+
+        &__header {
+            font-size: 3.4rem;
+            text-align: center;
+            line-height: 90%;
+        }
+
+        &__media {
+            width: 100%;
+            right: auto;
+            position: relative;
+        }
+
+        &__text {
+            max-width: inherit;
+            font-size: 1.4rem;
+            line-height: 160%;
+        }
+    }
 }

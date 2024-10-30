@@ -33,7 +33,7 @@
         }
 
         &.active {
-            font-weight: 700;
+       //     font-weight: 700;
             color: var(--c-primary);
 
             &:before {
@@ -46,6 +46,19 @@
                 background-color: var(--c-primary);
                 position: absolute;
             }
+        }
+    }
+
+    @media (max-width: $tablet) {
+
+        .swiper-wrapper {
+            overflow: visible;
+            justify-content: inherit;
+        }
+
+        &__button {
+            font-size: 1.1rem;
+            padding: 1rem 2rem;
         }
     }
 }

@@ -16,6 +16,10 @@ h2 {
     font-weight: 700;
     font-size: var(--fz-h2);
     line-height: var(--fz-h2);
+
+    @media (max-width: $tablet) {
+
+    }
 }
 
 h4,
@@ -43,6 +47,10 @@ h4 {
             content: '•';
             position: absolute;
         }
+    }
+
+    @media (max-width: $tablet) {
+        font-size: 1.4rem;
     }
 }
 
@@ -91,6 +99,14 @@ h4 {
         width: 28rem;
         flex-shrink: 0;
     }
+
+    @media (max-width: $tablet) {
+        column-gap: 1.6rem;
+
+        &__item {
+            width: calc(50% - 0.8rem)
+        }
+    }
 }
 
 .heading {
@@ -106,6 +122,19 @@ h4 {
         font-size: 1.5rem;
         line-height: 1.9rem;
         color: var(--fg-second);
+    }
+
+    @media (max-width: $tablet) {
+        margin-bottom: 2rem;
+
+        &__title {
+            margin-bottom: 1rem;
+        }
+
+        &__subtitle {
+            font-size: 1.3rem;
+            line-height: 1.7rem;
+        }
     }
 }
 

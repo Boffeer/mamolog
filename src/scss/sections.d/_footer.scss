@@ -21,6 +21,7 @@
     &__logo {
         display: block;
         width: 7.6rem;
+        flex-shrink: 0;
     }
 
     &__contacts {
@@ -153,5 +154,33 @@
             transition: var(--transition-time);
         }
 
+    }
+
+    @media (max-width: $tablet) {
+
+        &__main {
+            align-items: center;
+            padding: 2rem 2rem 2rem 2rem;
+        }
+
+        &__logo {
+            order: 1;
+        }
+
+        &__primary {
+            flex-wrap: wrap;
+        }
+
+        &__contacts {
+            order: 2;
+        }
+
+        &__offices {
+            order:3;
+        }
+        
+        &__contacts {
+            padding-top: 0;
+        }
     }
 }

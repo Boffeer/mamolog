@@ -56,7 +56,7 @@ function initSliders() {
 
     if (document.querySelector('[data-docs]')) {
         new Swiper('[data-docs]', {
-            modules: [Navigation],
+            modules: [Navigation, Pagination],
             observer: true,
             observeParents: true,
             slidesPerView: 'auto',
@@ -64,7 +64,10 @@ function initSliders() {
             autoHeight: true,
             speed: 600,
             loop: false,
-            // Arrows
+            pagination: {
+                el: '[data-docs-pagination]',
+                clickable: true,
+            },
             navigation: {
                 nextEl: '[data-docs-next]',
                 prevEl: '[data-docs-prev]',
@@ -78,8 +81,8 @@ function initSliders() {
             modules: [Navigation, Pagination],
             observer: true,
             observeParents: true,
-            slidesPerView: 2,
-            spaceBetween: 0,
+            slidesPerView: 1,
+            spaceBetween: 20,
             autoHeight: true,
             speed: 600,
             loop: false,
@@ -92,7 +95,50 @@ function initSliders() {
                 nextEl: '[data-works-next]',
                 prevEl: '[data-works-prev]',
             },
+            breakpoints: {
+                992: {
+                    slidesPerView: 2,
+                    spaceBetween: 0,
+                },
+            },
             on: {}
+        });
+    }
+
+    if (document.querySelector('[data-navbar]')) {
+        let navbarQuerySize  = 992;
+        let navbarSlider = null;
+
+        function navbarSliderInit() {
+            if(!navbarSlider) {
+                navbarSlider = new Swiper('[data-navbar]', {
+                    observer: true,
+                    observeParents: true,
+                    slidesPerView: 'auto',
+                    spaceBetween: 0,
+                });
+            }
+        }
+
+        function tagsSliderDestroy() {
+            if(navbarSlider) {
+                navbarSlider.destroy();
+                navbarSlider = null;
+            }
+        }
+
+        if (document.documentElement.clientWidth < navbarQuerySize) {
+            navbarSliderInit()
+        }
+
+        window.addEventListener('resize', function (){
+
+            if (document.documentElement.clientWidth < navbarQuerySize) {
+                navbarSliderInit()
+            }
+            else {
+                tagsSliderDestroy()
+            }
         });
     }
 }

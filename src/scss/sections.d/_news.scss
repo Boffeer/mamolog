@@ -4,6 +4,15 @@
     grid-row-gap: 3rem;
     grid-column-gap: 2rem;
     grid-template-columns: 1fr 1fr 1fr;
+
+    @media (max-width: $tablet) {
+        row-gap: 2.5rem;
+        grid-template-columns: 1fr;
+
+        &__title {
+
+        }
+    }
 }
 
 .news-item {
@@ -109,6 +118,14 @@
             color: var(--c-primary-dark);
             text-decoration: none;
             transition: var(--transition-time);
+        }
+    }
+
+    @media (max-width: $tablet) {
+
+        &__title {
+            font-size: 2.2rem;
+            line-height: 2.2rem;
         }
     }
 }

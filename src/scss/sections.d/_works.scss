@@ -45,6 +45,25 @@
         justify-content: flex-end;
         flex-grow: 1;
     }
+
+    @media (max-width: $tablet) {
+        row-gap: 1.5rem;
+        flex-direction: column;
+        align-items: flex-start;
+
+        &__title {
+            width: auto;
+            font-size: 3.2rem;
+        }
+
+        &__nav {
+            display: none;
+        }
+
+        &__block {
+            width: 100%;
+        }
+    }
 }
 
 .works {
@@ -80,5 +99,15 @@
 
     &__nav {
         display: none;
+    }
+
+
+    @media (max-width: $tablet) {
+        margin-top: 3rem;
+        justify-content: space-between;
+
+        &__nav {
+            display: block;
+        }
     }
 }

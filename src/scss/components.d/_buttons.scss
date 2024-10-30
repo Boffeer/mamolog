@@ -50,6 +50,11 @@
             transition: var(--transition-time);
         }
     }
+
+    @media (max-width: $tablet) {
+        font-size: 1.4rem;
+        min-height: 5rem;
+    }
 }
 
 .btn-outline-primary {
@@ -74,6 +79,12 @@
         text-decoration: none;
         background-color: #2B2B2B;
         transition: var(--transition-time);
+    }
+
+    @media (max-width: $tablet) {
+        min-width: inherit;
+        font-size: 1.2rem;
+        min-height: 4.5rem;
     }
 }
 
@@ -140,6 +151,19 @@
         i {
             width: 0.9rem;
             height: 1.6rem;
+        }
+    }
+
+    @media (max-width: $tablet) {
+
+        &--lg {
+            width: 5rem;
+            height: 5rem;
+
+            i {
+                width: 0.6rem;
+                height: 1.2rem;
+            }
         }
     }
 }

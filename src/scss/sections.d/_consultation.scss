@@ -162,4 +162,61 @@
             }
         }
     }
+
+    @media (max-width: $tablet) {
+        font-size: 1.4rem;
+
+        &__body {
+            padding: 2rem 4rem 3rem 4rem;
+        }
+
+        &__row {
+            row-gap: 2rem;
+            flex-direction: column;
+        }
+
+        &__lead {
+            max-width: inherit;
+        }
+
+        &__text {
+            font-size: 1.4rem;
+            line-height: 140%;
+        }
+
+        &__roadmap {
+            font-size: 1.4rem;
+            line-height: 140%;
+        }
+
+        &__media {
+            width: 100%;
+            border-radius: 2.5rem;
+            padding: 1.5rem 2.5rem;
+            background-color: rgba(238, 233, 227, 0.5);
+        }
+
+        &__block {
+            padding: 0;
+            background-color: transparent;
+        }
+
+        &__image {
+            border-radius: 1.5;
+        }
+
+        &__tag {
+            font-size: 1.25rem;
+        }
+
+        &__icon {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        &__info {
+            margin-top: 2.5rem;
+            padding-bottom: .5rem;
+        }
+    }
 }
