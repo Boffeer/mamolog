@@ -13,9 +13,17 @@
 @include font('Inter', normal, 600, '../resources/fonts/Inter/Inter-SemiBold');
 @include font('Inter', normal, 700, '../resources/fonts/Inter/Inter-Bold');
 
+@include font('Manrope', normal, 400, '../resources/fonts/Manrope/Manrope-Regular');
+@include font('Manrope', normal, 500, '../resources/fonts/Manrope/Manrope-Medium');
+@include font('Manrope', normal, 600, '../resources/fonts/Manrope/Manrope-Semibold');
+@include font('Manrope', normal, 700, '../resources/fonts/Manrope/Manrope-Bold');
+
 :root {
-    --ff-regular: "Inter", sans-serif;
-    --ff-title: "Inter", sans-serif;
+    --ff-regular:   'Manrope', sans-serif;
+    --ff-title:     'Inter', sans-serif;
+    --ff-secondary: 'Inter', sans-serif;
+
+
 
     --fz-regular: 1.6rem;
     --fz-title: 4.5rem;
@@ -115,9 +123,9 @@ body._lock {
 
 // Библиотеки
 @import "./libs/vanilla-datepicker";
-@import "./libs/swiper";
+// @import "./libs/swiper";
 @import "./libs/flatpickr.min";
-// @import "./libs/fancybox";
+@import "./libs/fancybox";
 
 
 .js_use-bg {

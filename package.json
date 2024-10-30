@@ -46,6 +46,7 @@
   "type": "module",
   "private": true,
   "dependencies": {
+    "@fancyapps/ui": "^5.0.36",
     "aos": "^2.3.4",
     "flatpickr": "^4.6.13",
     "grudus-timepicker": "^1.0.2",

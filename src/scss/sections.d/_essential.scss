@@ -1,0 +1,45 @@
+.essential {
+    padding: 6.5rem 10rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 4rem;
+    background-color: white;
+    min-height: 45.8rem;
+
+    &__media {
+        right: 0;
+        bottom: 0;
+        width: 55rem;
+        position: absolute;
+    }
+
+    &__content {
+        z-index: 10;
+        width: 60.4rem;
+        position: relative;
+    }
+
+    &__text {
+        max-width: 48rem;
+        font-size: 1.65rem;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 90%;
+        margin-bottom: 2rem;
+        font-family: var(--ff-title);
+
+    }
+
+    &__text {
+
+        p {
+
+            &:not(:last-child) {
+                margin-bottom: 2.4rem;
+            }
+        }
+    }
+}

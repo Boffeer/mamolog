@@ -1,19 +1,140 @@
 .about {
+    min-height: 51.4rem;
+    position: relative;
 
-}
-
-.about-docs {
-    display: flex;
-
-    &__content {
-        width: 2.8rem;
+    &:before {
+        content: '';
+        z-index: 10;
+        left: 8.2rem;
+        bottom: -19rem;
+        width: 120rem;
+        height: 25rem;
+        position: absolute;
+        background-color: #F6F8FA;
+        filter: blur(40px);
     }
 
-    &__item {
-        display: block;
+    &__main {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    &__beige {
+        margin-top: 5rem;
+        width: 50rem;
+        flex-shrink: 0;
+        border-radius: 4.2rem;
+        color: var(--fg-second);
+        padding: 4.1rem 6rem 4.7rem 6rem;
+        background-color: var(--bg-beige);
+
+        .btn-primary {
+            z-index: 50;
+            min-width: 28rem;
+            margin-top: 0.4rem;
+        }
+
+        .list-point {
+            row-gap: 1.7rem !important;
+        }
+    }
+
+    &__white {
+        margin-top: 5rem;
+        color: var(--fg-second);
+        width: 36rem;
+        flex-shrink: 0;
+        border-radius: 3rem;
+        padding: 2.2rem 2rem;
+        background-color: white;
+    }
+
+    &__header {
+        font-weight: 700;
+        font-size: 4rem;
+        line-height: 90%;
+        color: var(--fg-title);
+        margin-bottom: 2.8rem;
+        font-family: var(--ff-title);
     }
 
     &__media {
-        
+        z-index: 5;
+        pointer-events: none;
+        left: calc(50% - 26rem);
+        bottom: 0;
+        width: 59.3rem;
+        position: absolute;
+    }
+
+    .list-point {
+        line-height: 160% !important;
+    }
+}
+
+.about-docs {
+    z-index: 30;
+    overflow: hidden;
+    position: relative;
+    border-radius: 3rem;
+    background-color: white;
+    padding: 2.2rem 0 2.2rem 6rem;
+    display: flex;
+    align-items: center;
+
+    &__content {
+        width: 27rem;
+    }
+
+    &__item {
+        padding: .6rem;
+        display: block;
+        overflow: hidden;
+        border-radius: 1.9rem;
+    }
+
+    &__image {
+        display: block;
+        overflow: hidden;
+        border-radius: 1.2rem;
+    }
+
+    &__media {
+        width: calc(100% - 27rem);
+        flex-shrink: 0;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 3rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+        font-family: var(--ff-title);
+    }
+
+    &__text {
+        font-size: 1.2rem;
+        line-height: 140%;
+        color: var(--fg-second);
+    }
+
+    &__nav {
+        margin-top: 1.8rem;
+        display: flex;
+        column-gap: .6rem;
+        align-items: center;
+    }
+
+    .btn-primary {
+
+    }
+}
+
+[data-docs] {
+
+    .swiper-slide {
+        width: 35rem;
+        padding: 0 1rem;
     }
 }

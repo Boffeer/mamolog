@@ -58,6 +58,7 @@
         display: flex;
         column-gap: .5rem;
         align-items: center;
+        font-family: var(--ff-title);
 
         strong {
             font-weight: 700;
@@ -90,6 +91,7 @@
 
     &__title {
         color: var(--fg-title);
+        font-family: var(--ff-title);
         font-weight: 700;
         font-size: 3.2rem;
         line-height: 3.2rem;

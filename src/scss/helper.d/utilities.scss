@@ -35,6 +35,10 @@
   visibility: hidden !important;
 }
 
+.color-blue {
+    color: var(--c-primary);
+}
+
 // Alignment
 
 .text-left      { text-align: left !important; }
@@ -65,6 +69,11 @@
 .mb-0 {
     margin-bottom: 0 !important;
 }
+
+.mb-5 {
+    margin-bottom: 0.5rem !important;
+}
+
 
 .mb-10 {
     margin-bottom: 1rem !important;
