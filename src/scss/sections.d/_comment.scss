@@ -1,0 +1,45 @@
+.comment-portal {
+    display: flex;
+    row-gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+
+    &__item {
+        height: 2.9rem;
+        font-size: 1.3rem;
+        line-height: 160%;
+        border-radius: 3rem;
+        padding: 0 1rem;
+        color: var(--fg-second);
+        background-color: white;
+        display: flex;
+        column-gap: .8rem;
+        align-items: center;
+        white-space: nowrap;
+    }
+
+    &__logo {
+        height: 2.1rem;
+        display: inline-block;
+    }
+
+    &__rating {
+        display: flex;
+        column-gap: 0.4rem;
+        align-items: center;
+    }
+
+    &__link {
+        color: var(--fg-second);
+        text-decoration: underline;
+
+        &:hover {
+            color: var(--fg-second);
+            text-decoration: none;
+        }
+    }
+
+    &__star {
+        width: 5.3rem;
+    }
+}

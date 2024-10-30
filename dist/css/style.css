@@ -3276,6 +3276,10 @@ html.with-fancybox body.hide-scrollbar {
   margin-bottom: 1rem !important;
 }
 
+.mb-15 {
+  margin-bottom: 1.5rem !important;
+}
+
 .mb-20 {
   margin-bottom: 2rem !important;
 }
@@ -5381,6 +5385,9 @@ html.with-fancybox body.hide-scrollbar {
 .info__col:last-child {
   flex-grow: 1;
 }
+.info__col--pt {
+  padding-top: 2rem;
+}
 .info__question {
   z-index: 10;
   position: relative;
@@ -5398,6 +5405,7 @@ html.with-fancybox body.hide-scrollbar {
   font-size: 3.2rem;
   line-height: 110%;
   margin-bottom: 0.9rem;
+  font-family: var(--ff-title);
 }
 .info__image {
   display: block;
@@ -5414,12 +5422,18 @@ html.with-fancybox body.hide-scrollbar {
   line-height: 125%;
   background-color: #F6F8FA;
   border-radius: 3rem;
-  padding: 2rem 1rem;
+  padding: 1.5rem 1rem;
   display: flex;
   column-gap: 1.7rem;
 }
 .info__badge {
   margin-bottom: 1.2rem;
+}
+.info__badge-title {
+  margin-bottom: 2rem;
+}
+.info__text p:not(:last-child) {
+  margin-bottom: 2rem;
 }
 .info__footer {
   display: grid;
@@ -5427,12 +5441,20 @@ html.with-fancybox body.hide-scrollbar {
   grid-template-columns: 30rem 1fr;
 }
 .info__data {
-  font-weight: 700;
   font-size: 1.5rem;
   line-height: 160%;
 }
 .info__data p:not(:last-child) {
-  margin-bottom: 2rem;
+  margin-bottom: 2.4rem;
+}
+.info__expert {
+  margin-top: 4rem;
+  display: flex;
+  row-gap: 1.7rem;
+  flex-direction: column;
+}
+.info__expert--top {
+  margin-top: -8.4rem;
 }
 
 .info-author {
@@ -5484,6 +5506,10 @@ html.with-fancybox body.hide-scrollbar {
 .badge--red {
   color: white;
   background-color: var(--fg-red);
+}
+.badge--blue {
+  color: whitesmoke;
+  background: var(--c-primary);
 }
 .badge--sm {
   padding: 0.4rem 1.4rem;
@@ -5591,11 +5617,15 @@ h4 {
   color: var(--fg-title);
   margin-bottom: 1.5rem;
 }
-.heading__text {
+.heading__subtitle {
+  font-size: 1.5rem;
+  line-height: 1.9rem;
   color: var(--fg-second);
 }
 
 .homepage {
+  max-width: 100%;
+  overflow: hidden;
   position: relative;
 }
 .homepage__body {
@@ -5616,6 +5646,46 @@ h4 {
   left: calc(50% - 84rem);
   width: 243.6rem;
   position: absolute;
+}
+
+.comment-portal {
+  display: flex;
+  row-gap: 1rem;
+  flex-direction: column;
+  align-items: center;
+}
+.comment-portal__item {
+  height: 2.9rem;
+  font-size: 1.3rem;
+  line-height: 160%;
+  border-radius: 3rem;
+  padding: 0 1rem;
+  color: var(--fg-second);
+  background-color: white;
+  display: flex;
+  column-gap: 0.8rem;
+  align-items: center;
+  white-space: nowrap;
+}
+.comment-portal__logo {
+  height: 2.1rem;
+  display: inline-block;
+}
+.comment-portal__rating {
+  display: flex;
+  column-gap: 0.4rem;
+  align-items: center;
+}
+.comment-portal__link {
+  color: var(--fg-second);
+  text-decoration: underline;
+}
+.comment-portal__link:hover {
+  color: var(--fg-second);
+  text-decoration: none;
+}
+.comment-portal__star {
+  width: 5.3rem;
 }
 
 .success {

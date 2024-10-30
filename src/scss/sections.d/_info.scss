@@ -27,6 +27,10 @@
         &:last-child {
             flex-grow: 1;
         }
+
+        &--pt {
+            padding-top: 2rem;
+        }
     }
 
     &__question {
@@ -47,6 +51,7 @@
         font-size: 3.2rem;
         line-height: 110%;
         margin-bottom: .9rem;
+        font-family: var(--ff-title);
     }
 
     &__image {
@@ -66,13 +71,26 @@
         line-height: 125%;
         background-color: #F6F8FA;
         border-radius: 3rem;
-        padding: 2rem 1rem;
+        padding: 1.5rem 1rem;
         display: flex;
         column-gap: 1.7rem;
     }
 
     &__badge {
         margin-bottom: 1.2rem;
+    }
+
+    &__badge-title {
+        margin-bottom: 2rem;
+    }
+
+    &__text {
+
+        p {
+            &:not(:last-child) {
+                margin-bottom: 2rem;
+            }
+        }
     }
 
     &__footer {
@@ -82,14 +100,24 @@
     }
 
     &__data {
-        font-weight: 700;
         font-size: 1.5rem;
         line-height: 160%;
 
         p {
             &:not(:last-child) {
-                margin-bottom: 2rem;
+                margin-bottom: 2.4rem;
             }
+        }
+    }
+
+    &__expert {
+        margin-top: 4rem;
+        display: flex;
+        row-gap: 1.7rem;
+        flex-direction: column;
+
+        &--top {
+            margin-top: -8.4rem;
         }
     }
 }
@@ -149,6 +177,11 @@
     &--red {
         color: white;
         background-color: var(--fg-red);
+    }
+
+    &--blue {
+        color: whitesmoke;
+        background: var(--c-primary);
     }
 
     &--sm {
