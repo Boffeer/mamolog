@@ -47,6 +47,7 @@
     }
 
     @media (max-width: $tablet) {
+        margin-bottom: 2rem;
         row-gap: 1.5rem;
         flex-direction: column;
         align-items: flex-start;
@@ -62,6 +63,18 @@
 
         &__block {
             width: 100%;
+            padding: 2rem;
+        }
+    }
+
+    @media (max-width: $mobile) {
+
+        &__title {
+            font-size: 2.4rem;
+        }
+
+        &__block {
+            padding: 1rem;
         }
     }
 }
@@ -88,6 +101,8 @@
         overflow: hidden;
         border-radius: 2rem;
     }
+
+    @media (max-width: $mobile) {}
 }
 
 
@@ -101,7 +116,6 @@
         display: none;
     }
 
-
     @media (max-width: $tablet) {
         margin-top: 3rem;
         justify-content: space-between;
@@ -109,5 +123,9 @@
         &__nav {
             display: block;
         }
+    }
+
+    @media (max-width: $mobile) {
+        margin-top: 2rem;
     }
 }

@@ -89,6 +89,7 @@
 
         &__beige {
             width: 100%;
+            margin-top: 0;
             padding: 3rem 4rem 4rem 4rem;
             order: 1;
         }
@@ -111,6 +112,31 @@
 
         .btn-primary {
             width: 100%;
+        }
+    }
+
+    @media (max-width: $mobile) {
+
+        &__header {
+            font-size: 2.4rem;
+            margin-bottom: 1.3rem;
+        }
+
+        &__beige {
+            padding: 1.5rem 1.5rem 3.5rem 1.5rem;
+        }
+
+        &__media {
+            width: 100%;
+            order: 2;
+            margin: 0 auto;
+            left: auto;
+            bottom: auto;
+            position: relative;
+        }
+
+        &__white {
+            padding: 2.5rem 2rem 2.4rem 1.5rem;
         }
     }
 }
@@ -197,7 +223,8 @@
         }
 
         &__media {
-            width: 100%;
+            width: auto;
+            margin: 0 -1rem;
             flex-shrink: 0;
         }
 
@@ -205,6 +232,20 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        padding: 1.5rem 2rem 3.2rem 2rem;
+
+        &__title {
+            font-size: 2rem;
+            line-height: 2rem;
+            margin-bottom: .5rem;
+        }
+
+        &__media {
+            margin: 0 -0.5rem;
         }
     }
 }
@@ -222,6 +263,14 @@
         .swiper-slide {
             width: 40rem;
             padding: 0 1rem;
+        }
+    }
+
+    @media (max-width: $mobile) {
+
+        .swiper-slide {
+            width: 25.2rem;
+            padding: 0 .5rem;
         }
     }
 }

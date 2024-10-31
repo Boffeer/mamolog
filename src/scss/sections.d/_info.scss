@@ -125,6 +125,10 @@
     @media (max-width: $tablet) {
         padding: 3rem;
 
+        &__main {
+            row-gap: 2.3rem;
+        }
+
         &__row {
             row-gap: 2rem;
             flex-direction: column;
@@ -160,7 +164,7 @@
         }
 
         &__text {
-            font-size: 1.6rem;
+            font-size: 1.4rem;
             line-height: 160%;
         }
 
@@ -174,6 +178,45 @@
             &--top {
                 margin-top: 0;
             }
+        }
+
+        &__data {
+            font-size: 1.4rem;
+            line-height: 160%;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        padding: 1.5rem 1.5rem 3rem 1.5rem;
+
+        &__main {
+            margin-bottom: 1.5rem;
+            display: flex;
+            row-gap: 2.3rem;
+        }
+
+        &__header {
+            font-size: 2.4rem;
+            line-height: 110%;
+        }
+
+        &__text {
+            font-size: 1.4rem;
+            line-height: 160%;
+        }
+
+        &__gray {
+            padding: 1.5rem;
+        }
+
+        &__method {
+            row-gap: 1rem;
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .mb-5 {
+            margin-bottom: 1.5rem !important;
         }
     }
 }
@@ -199,9 +242,17 @@
     &__name {
         color: var(--fg-title);
         font-weight: 700;
-        font-size: 1.6rem;
-        line-height: 2rem;
-        margin-bottom: .4rem;
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+        margin-bottom: .2rem;
+    }
+
+    @media (max-width: $mobile) {
+
+        &__avatar {
+            width: 7rem;
+            height: 7rem;
+        }
     }
 }
 
@@ -247,4 +298,6 @@
         line-height: 1rem;
         text-transform: inherit;
     }
+
+    @media (max-width: $mobile) { }
 }

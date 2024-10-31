@@ -7,15 +7,15 @@
 */
 
 .burger {
-    --line-width: 50%;
-    --line-height: 2.5px;
+    --line-width: 47.5%;
+    --line-height: 3px;
     --line-offset: 0.8rem;
     --c-burger-line: #000;
     position: relative;
     width: var(--burger-width, 40px);
     height: var(--burger-height, 40px);
     transition: var(--tr);
-  //  margin-left: 3rem;
+    margin-left: 3rem;
     cursor: pointer;
     z-index: 3;
 
@@ -23,14 +23,14 @@
         display: none;
     }
     @media (max-width: $tablet) {
-   //     margin-left: 1rem;
+        margin-left: 1rem;
     }
 }
 
 .burger__line {
     position: absolute;
     top: 50%;
-    right: 0%;
+    left: 50%;
     display: block;
     width: var(--line-width, 50%);
     height: var(--line-height, 0.2rem);
@@ -45,8 +45,7 @@
 }
 
 .burger__line:nth-child(2) {
-    width: 30%;
-    transform: translate(-80%, calc(-50% + 0px));
+    transform: translate(-50%, calc(-50% + 0px));
 }
 
 .burger__line:nth-child(3) {

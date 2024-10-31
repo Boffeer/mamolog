@@ -176,7 +176,7 @@
         }
 
         &__lead {
-            max-width: inherit;
+            max-width: 30rem;
         }
 
         &__text {
@@ -217,6 +217,37 @@
         &__info {
             margin-top: 2.5rem;
             padding-bottom: .5rem;
+        }
+    }
+
+    @media (max-width: $mobile) {
+        padding: 1rem 1rem 2.5rem 1rem;
+
+        &__header {
+            padding: 0;
+            margin-bottom: 1.5rem;
+
+            &:before {
+                display: none;
+            }
+        }
+
+        &__body {
+            padding: 0;
+        }
+
+        &__title {
+            font-size: 2rem;
+            line-height: 2rem;
+            margin-bottom: 1.3rem;
+        }
+
+        &__lead {
+            padding: 1.2rem 1.5rem;
+            font-weight: 700;
+            font-size: 1.4rem;
+            line-height: 140%;
+            max-width: 23rem;
         }
     }
 }

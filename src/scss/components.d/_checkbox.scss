@@ -77,4 +77,13 @@
         &:hover {
         }
     }
+
+    @media (max-width: $mobile) {
+
+        &__label {
+            padding-top: 0.2rem;
+            font-size: 1.1rem;
+            line-height: 1.5rem;
+        }
+    }
 }

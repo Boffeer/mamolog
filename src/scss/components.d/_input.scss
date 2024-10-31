@@ -102,4 +102,22 @@
             }
         }
     }
+
+
+    @media (max-width: $mobile) {
+
+        #{$input-selector} {
+            height: 4.5rem;
+            font-size: 1.2rem;
+            line-height: 1.9rem;
+            padding: 1rem 1.4rem;
+        }
+
+        &--icon {
+
+            #{$input-selector} {
+                padding-left: 3.4rem;
+            }
+        }
+    }
 }

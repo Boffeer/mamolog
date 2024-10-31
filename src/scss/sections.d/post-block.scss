@@ -53,6 +53,15 @@
             width: 100%;
         }
     }
+
+    @media (max-width: $mobile) {
+        padding: 2rem 1.5rem 3rem 1.5rem;
+
+        &__header {
+            font-size: 2rem;
+            line-height: 2rem;
+        }
+    }
 }
 
 .post {
@@ -136,8 +145,11 @@
         }
     }
 
-
     @media (max-width: $tablet) {
+
+        &__media {
+            margin-bottom: 1.4rem;
+        }
 
         &__title {
             font-size: 1.6rem;
@@ -148,5 +160,9 @@
             font-size: 1.5rem;
             line-height: 2.1rem;
         }
+    }
+
+    @media (max-width: $mobile) {
+
     }
 }

@@ -105,4 +105,24 @@
             }
         }
     }
+
+    @media (max-width: $mobile) {
+
+        &__main {
+            font-size: 1.4rem;
+            line-height: 132%;
+        }
+
+        &__item {
+            align-items: inherit;
+        }
+
+        &__content {
+            column-gap: 2rem;
+            row-gap: 1rem;
+            align-items: flex-end;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+        }
+    }
 }

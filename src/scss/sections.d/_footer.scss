@@ -159,6 +159,7 @@
     @media (max-width: $tablet) {
 
         &__main {
+            row-gap: 2.5rem;
             align-items: center;
             padding: 2rem 2rem 2rem 2rem;
         }
@@ -178,9 +179,16 @@
         &__offices {
             order:3;
         }
-        
+
         &__contacts {
             padding-top: 0;
         }
+
+        &__secondary {
+            row-gap: 2rem;
+            flex-direction: column;
+        }
+
+
     }
 }

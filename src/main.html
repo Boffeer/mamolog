@@ -49,7 +49,12 @@
                                 </div>
                             </div>
                             <div class="intro__media">
-                                <img src="img/d_intro/primary__image.png" class="img-fluid" alt="">
+                                <div class="intro__image--xl">
+                                    <img src="img/d_intro/primary__image_sm.png" class="img-fluid" alt="">
+                                </div>
+                                <div class="intro__image--sm">
+                                    <img src="img/d_intro/primary__image_sm.png" class="img-fluid" alt="">
+                                </div>
                                 <div class="intro__person">
                                     <span>Иван Мурашов</span>
                                 </div>
@@ -274,7 +279,7 @@
                                                     <div class="badge badge--red badge--sm">Не рекомендую</div>
                                                     <div>Секторальная резекция</div>
                                                 </div>
-                                                <div class="info__method mb-5">
+                                                <div class="info__method">
                                                     <div class="badge badge--red badge--sm">Не рекомендую</div>
                                                     <div>Криоабляция: уничтожение опухоли с помощью замораживания</div>
                                                 </div>
@@ -354,7 +359,7 @@
                                                         с применением спирта
                                                     </div>
                                                 </div>
-                                                <div class="info__method mb-5">
+                                                <div class="info__method">
                                                     <div class="badge badge--red badge--sm">Не рекомендую</div>
                                                     <div>Физиотерапевтические процедуры</div>
                                                 </div>
@@ -733,7 +738,7 @@
                             <div class="about__main">
                                 <div class="about__beige">
                                     <div class="about__header">Ключевые факты</div>
-                                    <ul class="list-point mb-30">
+                                    <ul class="list-line mb-30">
                                         <li>Победитель Гран-при ПроДокторов 2021, 2022 и 2023 «Лучший маммолог России»</li>
                                         <li>13 лет практики, более 10 000 биопсий</li>
                                         <li>Награжден медалью ордена «За заслуги перед отечеством» II степени</li>
@@ -857,19 +862,19 @@
                         </h2>
                         <div class="consultation" data-tabs>
                             <div class="consultation__header">
-                                <div class="tabs-nav">
-                                    <div class="tabs-nav__header">
-                                        <div class="tabs-nav__active">Онлайн</div>
+                                <div class="tabs-nav" data-select>
+                                    <div class="tabs-nav__header" data-select-toggle>
+                                        <div class="tabs-nav__active" data-select-active>Онлайн</div>
                                         <div class="tabs-nav__arrow">
                                             <svg class="img-fluid" viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg">
                                                 <use xlink:href="img/common.d/sprites/sprite.svg#caret-down" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="tabs-nav__content">
-                                        <div class="tabs-nav__item active" data-tabs-nav="tab1">Онлайн</div>
-                                        <div class="tabs-nav__item" data-tabs-nav="tab2">Осмотр</div>
-                                        <div class="tabs-nav__item" data-tabs-nav="tab3">Второе мнение</div>
+                                    <div class="tabs-nav__content" data-select-content>
+                                        <div class="tabs-nav__item active" data-select-item data-tabs-nav="tab1">Онлайн</div>
+                                        <div class="tabs-nav__item" data-select-item data-tabs-nav="tab2">Осмотр</div>
+                                        <div class="tabs-nav__item" data-select-item data-tabs-nav="tab3">Второе мнение</div>
                                     </div>
                                 </div>
                             </div><!-- .consultation__header -->
@@ -886,7 +891,7 @@
                                                     <li>Переживаете о здоровье груди в преддверии менопаузы?</li>
                                                 </ul>
                                             </div>
-                                            <div class="consultation__title">Я готов стать вашим личным маммологом!</div>
+                                            <div class="consultation__title">Я готов стать вашим <br>личным маммологом!</div>
                                             <ol class="consultation__roadmap">
                                                 <li>На консультации сможете поделиться жалобами / подозрениями / переживаниями. Поднимем вашу историю болезни.</li>
                                                 <li>Разберемся, есть ли существенные причины обратиться за полноценным осмотром.</li>
@@ -941,7 +946,7 @@
                                                             <span class="checkbox__label">Даю согласие на обработку персональных данных</span>
                                                         </label>
                                                     </div>
-                                                    <button type="button" class="btn-primary w-100">
+                                                    <button type="button" class="btn-primary btn-send w-100">
                                                         <span>Зарегистрироваться</span>
                                                     </button>
                                                 </div>
@@ -1093,7 +1098,7 @@
                                                             <span class="checkbox__label">Даю согласие на обработку персональных данных</span>
                                                         </label>
                                                     </div>
-                                                    <button type="button" class="btn-primary w-100">
+                                                    <button type="button" class="btn-primary btn-send w-100">
                                                         <span>Зарегистрироваться</span>
                                                     </button>
                                                 </div>
