@@ -170,6 +170,7 @@
 
         &__primary {
             flex-wrap: wrap;
+            align-items: center;
         }
 
         &__contacts {
@@ -185,10 +186,41 @@
         }
 
         &__secondary {
+            width: 100%;
             row-gap: 2rem;
             flex-direction: column;
         }
+    }
 
 
+    @media (max-width: $mobile) {
+
+        &__primary {
+
+        }
+
+        &__logo {
+            width: 5.5rem;
+            height: 5.5rem;
+        }
+
+        &__main {
+            row-gap: 2.5rem;
+        }
+
+        &__offices {
+            width: 100%;
+            row-gap: 1rem;
+            flex-direction: column;
+        }
+
+        &__buttons {
+            width: 100%;
+            margin-bottom: .6rem;
+        }
+
+        &__button {
+            flex-grow: 1;
+        }
     }
 }

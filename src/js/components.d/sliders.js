@@ -1,5 +1,5 @@
 import Swiper from 'swiper';
-import { Navigation, Pagination, Autoplay } from 'swiper/modules';
+import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 
 // Инициализация слайдеров
 function initSliders() {
@@ -139,6 +139,32 @@ function initSliders() {
             else {
                 tagsSliderDestroy()
             }
+        });
+    }
+
+    if (document.querySelector('[data-comments]')) {
+        new Swiper('[data-comments', {
+            modules: [Pagination, Scrollbar],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            speed: 600,
+            loop: false,
+            pagination: {
+                el: '[data-comments-pagination]',
+                clickable: true,
+            },
+            scrollbar: {
+                el: '[data-comments-scrollbar]',
+            },
+            breakpoints: {
+                992: {
+                    slidesPerView: 4,
+                    spaceBetween: 0,
+                },
+            },
+            on: {}
         });
     }
 }

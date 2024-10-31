@@ -43,11 +43,11 @@ telInputs.forEach(tel => {
 })
 //*/
 
-import "../components.b/controls/copyclicker.js"
-const phones = document.querySelectorAll('a[href^="tel:"]');
-phones.forEach((phone) => {
-  phone.classList.add('js_copyclicker');
-});
+// import "../components.b/controls/copyclicker.js"
+// const phones = document.querySelectorAll('a[href^="tel:"]');
+// phones.forEach((phone) => {
+//   phone.classList.add('js_copyclicker');
+// });
 //*/
 
 

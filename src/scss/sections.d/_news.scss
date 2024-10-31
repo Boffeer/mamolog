@@ -132,4 +132,10 @@
 
 .news-btn-read {
     min-width: 38.8rem;
+
+
+    @media (max-width: $mobile) {
+        min-width: inherit;
+        width: 100%;
+    }
 }

@@ -102,6 +102,8 @@
     min-height: 6rem;
     padding: 1rem 3rem;
     border-radius: 5rem;
+    font-size: 1.5rem;
+    line-height: 2.1rem;
     font-family: var(--ff-secondary);
     text-transform: uppercase;
     border: 1px solid rgba(61, 61, 61, 0.3);
@@ -116,6 +118,10 @@
     &:active {
         color: rgba(61, 61, 61, .7);
         border-color: rgba(61, 61, 61, 0.7);
+    }
+
+    @media (max-width: $mobile) {
+        min-height: 5.5rem;
     }
 }
 
@@ -181,5 +187,19 @@
 
     @media (max-width: $mobile) {
         min-height: 4.4rem;
+    }
+}
+
+.btn-text {
+    padding: 0;
+    border: none;
+    outline: none;
+    display: inline;
+    cursor: pointer;
+    text-decoration: underline;
+    background-color: transparent;
+
+    &:hover {
+        text-decoration: none;
     }
 }

@@ -1,54 +1,65 @@
 <footer class="footer">
-	<div class="container footer__container">
-	    <a href="#" class="footer__logo logo">
-	      <!-- <img src="./img/common/logo-header.svg" alt="" class="logo__img"> -->
-	      carrent
-	    </a>
-
-	    <div class="footer__links">
-	    	@@include('../b/socials.html', {
-	    		className: 'footer__socials',
-	    		socials: [
-		    		{
-		    			id: 'facebook',
-		    			name: 'FB',
-		    			href: 'https://fb.com'
-		    		},
-		    		{
-		    			id: 'instagram',
-		    			name: 'IG',
-		    			href: 'https://instagram.com'
-		    		},
-		    		{
-		    			id: 'whatsapp',
-		    			name: 'WA',
-		    			href: 'https://wa.me'
-		    		},
-	    		],
-	    	})
-	    	<ul class="footer__links-list">
-	    		<li class="footer__links-item">
-	    			<a href="#" class="link footer__links-link">Политика конфиденциальности</a>
-	    		</li>
-	    		<li class="footer__links-item">
-	    			<a href="#" class="link footer__links-link">Договор оферты</a>
-	    		</li>
-	    	</ul>
-	    </div>
-
-
-	    <div class="footer__contact">
-	    	<a href="#" class="footer__phone">
-	    		<span class="footer__phone-caption">Связаться с нами:</span>
-	    		<span class="footer__phone-text">+7 (495) 968-32-27</span>
-	    		<span class="footer__phone-caption">09:00 - 22:00 Мск</span>
-	    	</a>
-	    	<a href="#" class="footer__location">
-				<svg class="footer__location-icon">
-					<use xlink:href="./img/common.crrt/icon-geo.svg#icon-geo" />
-				</svg>
-				<span class="footer__location-address">109316, Мадейра, ул. За ухо, 25</span>
-	    	</a>
-	    </div>
-	</div>
+    <div class="container">
+        <div class="footer__main">
+            <div class="footer__primary">
+                <a href="/" class="footer__logo">
+                    <img src="img/common.d/footer__logo.png" class="img-fluid" alt="">
+                </a>
+                <div class="footer__offices">
+                    <div class="footer__address">
+                        <i>
+                            <svg class="img-fluid" viewBox="0 0 13 20" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/common.d/sprites/sprite.svg#icon-pin" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                            </svg>
+                        </i>
+                        <span>г. Москва, ул. Сергия Радонежского, д.5/2, стр.1</span>
+                    </div>
+                    <div class="footer__address">
+                        <i>
+                            <svg class="img-fluid" viewBox="0 0 13 20" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/common.d/sprites/sprite.svg#icon-pin" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                            </svg>
+                        </i>
+                        <span>г. Москва, ул. Сергия Радонежского, д.5/2, стр.1</span>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <a href="mailto:example@mail.ru" class="footer__contact">
+                        <i>
+                            <svg class="img-fluid" viewBox="0 0 17 13" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/common.d/sprites/sprite.svg#icon-email" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                            </svg>
+                        </i>
+                        <span>example@mail.ru</span>
+                    </a>
+                    <a href="tel:+7 999 153 8341" class="footer__contact">
+                        <i>
+                            <svg class="img-fluid" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
+                                <use xlink:href="img/common.d/sprites/sprite.svg#icon-phone" xmlns:xlink="http://www.w3.org/1999/xlink"></use>
+                            </svg>
+                        </i>
+                        <span>+7 999 153 8341</span>
+                    </a>
+                </div>
+            </div>
+            <div class="footer__secondary">
+                <div class="footer__buttons">
+                    <a href="#" class="footer__button" target="_blank">
+                        <span>Telegram</span>
+                    </a>
+                    <a href="#" class="footer__button" target="_blank">
+                        <span>WhatsApp</span>
+                    </a>
+                </div>
+                <div class="footer__elem">
+                    <div class="footer__dev">
+                        Создатель сайта - <a href="#" target="_blank">Асташко Никита</a>
+                    </div>
+                </div>
+                <div class="footer__text">
+                    <a href="#" class="footer__policy">Политика конфиденциальности</a>
+                </div>
+            </div>
+        </div>
+    </div>
 </footer>
