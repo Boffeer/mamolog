@@ -1,5 +1,4 @@
 .intro {
-    overflow: hidden;
     max-width: 100%;
     position: relative;
     display: flex;
@@ -48,6 +47,10 @@
         line-height: 160%;
         color: var(--fg-second);
         margin-bottom: 4rem;
+
+        p {
+            margin: 0;
+        }
 
         strong {
             border-bottom: 1px dashed var(--c-primary);

@@ -1,5 +1,5 @@
 document.addEventListener('click', (event) => {
-    console.log('tabs')
+
     if (event.target.closest('[data-tabs-nav]')) {
         const tabs = event.target.closest('[data-tabs]');
         const tabsNavs = tabs.querySelectorAll('[data-tabs-nav]');

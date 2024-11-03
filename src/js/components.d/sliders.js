@@ -4,55 +4,6 @@ import { Navigation, Pagination, Scrollbar } from 'swiper/modules';
 // Инициализация слайдеров
 function initSliders() {
     // Перечень слайдеров
-    if (document.querySelector('[data-swiper]')) {
-        new Swiper('[data-swiper]', {
-            // Подключаем модули слайдера
-            // для конкретного случая
-            //modules: [Navigation, Pagination],
-            /*
-            effect: 'fade',
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false,
-            },
-            */
-            observer: true,
-            observeParents: true,
-            slidesPerView: 1,
-            spaceBetween: 0,
-            autoHeight: true,
-            speed: 800,
-            //touchRatio: 0,
-            //simulateTouch: false,
-            //loop: true,
-            //preloadImages: false,
-            //lazy: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            // Arrows
-            navigation: {
-                nextEl: '.swiper__more .swiper__more--next',
-                prevEl: '.swiper__more .swiper__more--prev',
-            },
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                    spaceBetween: 16,
-                },
-                768: {
-                    slidesPerView: 4,
-                    spaceBetween: 24,
-                },
-                1024: {
-                    slidesPerView: 4,
-                    spaceBetween: 32,
-                },
-            },
-            on: {}
-        });
-    }
 
     if (document.querySelector('[data-docs]')) {
         new Swiper('[data-docs]', {
@@ -163,6 +114,28 @@ function initSliders() {
                     slidesPerView: 4,
                     spaceBetween: 0,
                 },
+            },
+            on: {}
+        });
+    }
+
+    if (document.querySelector('[data-steps]')) {
+        new Swiper('[data-steps]', {
+            modules: [Navigation, Pagination],
+            observer: true,
+            observeParents: true,
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            autoHeight: true,
+            speed: 600,
+            loop: false,
+            pagination: {
+                el: '[data-steps-pagination]',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '[data-steps-next]',
+                prevEl: '[data-steps-prev]',
             },
             on: {}
         });
