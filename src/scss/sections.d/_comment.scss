@@ -77,6 +77,10 @@
         display: none;
     }
 
+    &__item {
+        display: block;
+    }
+
     @media (max-width: $tablet) {
 
         &:after,

@@ -172,6 +172,7 @@
 
     @media (max-width: $tablet) {
         padding: 3rem;
+        border-radius: 2rem;
 
         &:before {
             top: -1rem;
@@ -211,6 +212,7 @@
     }
 
     @media (max-width: $mobile) {
+        border-radius: 2rem;
         padding: 2rem 1.5rem;
 
         &:before {

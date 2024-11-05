@@ -1,6 +1,10 @@
 .section {
     margin-bottom: 10rem;
 
+    &--top {
+        padding-top: 4rem;
+    }
+
     &--md {
         margin-bottom: 4rem;
     }
@@ -30,6 +34,11 @@
                 margin-bottom: 3.5rem;
             }
         }
+
+        &--top {
+            padding-top: 2rem;
+        }
+
     }
 
     @media (max-width: $mobile) {

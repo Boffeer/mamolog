@@ -193,6 +193,11 @@
             font-size: 1.4rem;
             line-height: 160%;
         }
+
+        &__gray {
+            padding: 1.5rem;
+            border-radius: 2.4rem;
+        }
     }
 
     @media (max-width: $mobile) {

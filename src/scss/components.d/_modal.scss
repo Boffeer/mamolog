@@ -224,3 +224,24 @@
 
     }
 }
+
+.fancybox__toolbar {
+  //  display: none !important;
+}
+
+.fancybox__toolbar__column {
+
+    &.is-left {
+        display: none;
+    }
+
+    &.is-right {
+
+        .f-button {
+
+            &:not(:last-child) {
+                display: none !important;
+            }
+        }
+    }
+}
